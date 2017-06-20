@@ -42,6 +42,41 @@ q:before, q:after {
 	color: #fff;
 	background-color: #121212;
 }
+/* Classes that't repeat more than one's*/
+.heading-h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.paragraph {
+	font-size: 18px;
+	font-weight: normal;
+	color: #515151;
+	line-height: 27px;
+	text-align: center;
+}
+.icon {
+	color: #fff;
+  background-color: #d32f2f;
+  width: 64px;
+  height: 64px;
+  font-size: 22px;
+  line-height: 43px;
+  border-radius: 50%;
+  padding: 10px;
+	text-align: center;
+	margin: 0 5px;	
+	box-shadow: 1px 1px 2px #000;
+	transition: .5s;
+}
+.icon-hover:hover {
+	color: #d32f2f;
+  background-color: #fff;
+}
+/*/////////////// Header Block //////////////*/
 .wrapper {
 	height: 85px;
 }
@@ -131,15 +166,12 @@ q:before, q:after {
 .double-phone img:first-child {
   position: absolute;
 }
+/*/////////////// Header Block  End's Here //////////////*/
+/*/////////////// Second Block  Benefit's //////////////*/
 .presentation {
 	column-count: 3;
 	padding: 40px;
 	margin: 20px;
-}
-.presentation:after {
-	display: block;
-	content: "";
-	clear: both;
 }
 .presentation .row {
 	max-width: 750px;
@@ -166,9 +198,8 @@ q:before, q:after {
 	text-align: center;
 	box-shadow: 1px 1px 2px #000;
 	transition: .5s;
-	transform: translateX(-10px);
 	float: left;
-	margin: 0 5px;	
+	margin: 0 10px;	
 }
 .presentation i:hover{
 	color: #d32f2f;
@@ -181,7 +212,6 @@ q:before, q:after {
 	font-size: 20px;
   font-weight: 600;
   line-height: 1.3;
-	display: block;
 }
 .presentation a:hover {
 	color: #d32f2f;
@@ -193,5 +223,418 @@ q:before, q:after {
   margin: 20px 0 10px;
   background-color: #121212;
 }
+/*/////////////// Second Block End's here //////////////*/
+/*/////////////// Block About How to use it //////////////*/
+.how-it-works {
+	background-color: #f7f7f7;
+	padding: 100px 0 90px;
+}
+.how-it-works a {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #000;
+  text-decoration: none;
+	transition: .5s;
+	margin-bottom: 15px;
+	display: block;
+}
+.how-it-works a:hover {
+	color: #d32f2f;
+}
+.how-it-works h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+  text-align: center;
+}
+.how-it-works p {
+	font-size: 16px;
+	font-weight: normal;
+	color: #515151;
+	line-height: 27px;
+}
+.how-it-works img {
+	width: 360px;
+	height: 202px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+p.sub-title  {
+	font-size: 18px;
+	color: #515151;
+	text-align: center;
+	max-width: 700px;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.how-it-works .line-separator {
+	margin: 25px auto;
+}
+/*/////////////// Block About How to use it end's here //////////////*/
+/*/////////// Section with Swipe//////////*/
+.swipe .col-md-4 {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+.swipe .line-separator {
+	width: 40px;
+  height: 3px;
+  display: block;
+  margin: 20px auto 50px; 
+  background-color: #121212;
+}
+.swipe p:not(.paragraph) {
+	font-size: 16px;
+	font-weight: normal;
+	color: #515151;
+	line-height: 27px;
+	max-width: 250px;
+}
+.swipe a {
+	font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #000;
+  text-decoration: none;
+	transition: .5s;
+}
+.swipe a:hover {
+	color: #d32f2f;
+}
+.phone-frame img {
+	width: 290px;
+}
+
+
+
+/*////////////// Subscribe //////////*/
+.subscribe {
+	background: url(../img/table-restaurant-dark.jpg);
+	height: 360px;
+	background-position: 30% 40%;
+	background-attachment: fixed;
+	margin-top: 100px;
+}
+.subscribe .row {
+	transform: translateY(130px);
+}
+.subscribe .row:last-child {
+	transform: translateY(180px);
+	margin: 0 auto;
+	max-width: 700px;
+}
+.subscribe .line-separator {
+	background-color: #fff;
+	margin: 0 auto;
+}
+.subscribe h2 {
+	color: #fff;
+	font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.subscribe  [type="email"] {
+  border: 0;
+  height: 44px;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 0;
+  line-height: 24px;
+  background-color: transparent;
+  border-bottom: 1px solid #555;
+  transition: .5s;
+}
+.subscribe  [type="email"]::placeholder {
+	color: #fff;
+}
+.subscribe  [type="email"]:focus {
+  border-bottom: 1px solid #d32f2f;
+  background-color: transparent;
+}
+.subscribe button {
+	color: #fff;
+  background-color: #d32f2f;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 700;
+  width: 230px;
+  height: 45px;
+  transition: 1s;
+}
+.subscribe button:hover {
+	background-color: #AA0000;
+}
+/*////////// pastabilities restaurant////////////*/
+.benefits {
+	padding-top: 100px;
+	background-color: #f7f7f7;
+}
+.benefits .heading-h2 {
+	text-align: left;
+}
+.benefits .paragraph {
+	text-align: left;
+	font-size: 16px;
+	max-width: 750px;
+	color: #515151;
+}
+.benefits .col-md-6 {
+	width: 400px;
+}
+.benefits a {
+	font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #000;
+  text-decoration: none;
+  transition: .5s;
+  display: block;
+  margin: 15px 0;
+}
+.benefits a:hover {
+	color: #d32f2f; 
+}
+.benefits p:not(.paragraph) {
+	font-size: 16px;
+	color: #515151;
+	width: 360px;
+	line-height: 1.5;
+}
+.benefits i {
+	margin-top: 15px;
+}
+/*//////////// feedback ///////////*/
+.stay-in-touch {
+	margin-top: 100px;
+}
+.stay-in-touch input::placeholder {
+	color: #515151;
+	font-size: 16px;
+}
+.stay-in-touch  [type="text"] {
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #9e9e9e;
+  transition: .5s;
+}
+.stay-in-touch  [type="text"]:focus {
+  border-bottom: 2px solid #d32f2f;
+  background-color: transparent;
+}
+.stay-in-touch input {
+	background-color: transparent;
+}
+.stay-in-touch .line-separator {
+	margin-top: 15px;
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.stay-in-touch .feedback {
+	margin: 30px 0;
+}
+.box {
+	width: 300px;
+	height: 76px;
+	border-radius: 4px;
+	border: 1px solid #9e9e9e;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+.box img {
+	width: 70px;
+	height: 74px;
+	display: block;
+	transform: translateX(80px);
+}
+.box input[type="checkbox"] {
+  margin-right: 10px;
+}
+.stay-in-touch button {
+	width: 145px;
+	height: 44px;
+	background-color: #d32f2f;
+	border: 0;
+	color: #fff;
+	font-weight: bold;
+	margin: 0 auto;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+.stay-in-touch button:hover {
+	box-shadow: 1px 2px 1px #515151;
+}
+.send {
+	margin: 30px 0 65px;
+}
+/*///////// social icons //////////////*/
+.social {
+	background: url(../img/social-001.jpg) no-repeat;
+	background-position: 20% 30%;
+	background-attachment: fixed;
+	height: 130px;
+	margin-bottom: 50px;
+}
+.social li {
+	display: inline-block;
+	margin: 40px auto;
+	transform: translateX(420px);
+}
+.social li i {
+	background-color: transparent;
+	box-shadow: none;
+	font-size: 18px;
+	height: 50px;
+	width: 50px;
+	line-height: 30px;
+}
+.social li i:hover {
+	background-color: #d32f2f;
+	color: #fff;
+}
+.about-company a {
+	text-decoration: none;
+	color: #000;
+	font-size: 16px;
+	margin: 0 10px;
+	transition: 1s;
+}
+.about-company a:hover {
+	color: #d32f2f;
+}
+footer p {
+	margin: 0 auto;
+	text-align: center;
+	border-top: 1px solid 
+	padding: 30px 0;
+	font-size: 16px;
+	font-weight: 600;
+}
+footer a {
+	text-decoration: none;
+	color: #d32f2f;
+	transition: .5s;
+}
+footer a:hover {
+	color: #515151;
+	text-decoration: none;
+}
+.line {
+	height: 1px;
+	background-color: #C2C1C0;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#C2C1C0;
 #d32f2f;
+/*.swipe .col-md-4 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.swipe .col-md-4:first-child {
+	margin-top: 60px;
+}
+.swipe .col-md-4:last-child {
+	margin-top: 60px;
+}
+.swipe .col-md-4:first-child p  {
+	text-align: right;
+	max-width: 280px;
+}
+.swipe .col-md-4:first-child h4 {
+	text-align: right;
+}
+.swipe .col-md-4:last-child p {
+	text-align: left;
+	max-width: 280px;
+}
+.fa-th,.fa-book, .fa-diamond {
+	position: relative;
+	left: 290px;
+	bottom: 110px;
+}*/
