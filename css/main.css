@@ -51,6 +51,28 @@ q:before, q:after {
   text-align: center;
   margin-bottom: 10px;
 }
+.form-group label {
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  cursor: text;
+  display: block;
+  color: #515151;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 24px;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
 .paragraph {
 	font-size: 18px;
 	font-weight: normal;
@@ -168,25 +190,15 @@ q:before, q:after {
 }
 /*/////////////// Header Block  End's Here //////////////*/
 /*/////////////// Second Block  Benefit's //////////////*/
-.presentation {
-	column-count: 3;
-	padding: 40px;
-	margin: 20px;
+.custom-list {
+
+  position: relative;
 }
-.presentation .row {
-	max-width: 750px;
-	margin: 40px 0;
+.custom-list.full-width {
+	padding-left: 90px;
+	margin-top: 16px;
 }
-.presentation h2 {
-	font-size: 28px;
-	font-weight: bold;
-	color: #000;
-}
-.presentation p {
-	color: #515151;
-	line-height: 17px;
-}
-.presentation i {
+.custom-list i {
   color: #fff;
   background-color: #d32f2f;
   width: 64px;
@@ -198,13 +210,31 @@ q:before, q:after {
 	text-align: center;
 	box-shadow: 1px 1px 2px #000;
 	transition: .5s;
-	float: left;
-	margin: 0 10px;	
+	margin: 0 10px;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
-.presentation i:hover{
+.custom-list i:hover{
 	color: #d32f2f;
   background-color: #fff;
 }
+.presentation {
+	padding: 40px 0;
+}
+.presentation .row {
+	
+}
+.presentation h2 {
+	font-size: 28px;
+	font-weight: bold;
+	color: #000;
+}
+.presentation p {
+	color: #515151;
+	line-height: 17px;
+}
+
 .presentation a {
 	text-decoration: none;
 	color: #000;
